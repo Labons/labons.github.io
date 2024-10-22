@@ -53,29 +53,29 @@
     </section>
 
     <script src="javascript.js"></script>
-    <!-- JavaScript to display your model -->
+    <div id="modelContainer" style="width: 100vw; height: 100vh;"></div>
+
     <script>
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
-
-        // Load the 3D model
+        
+        const container = document.getElementById('modelContainer');
+        renderer.setSize(container.clientWidth, container.clientHeight);
+        container.appendChild(renderer.domElement);
+    
         const loader = new THREE.GLTFLoader();
         loader.load('models/Aqua.glb', function (gltf) {
             scene.add(gltf.scene);
         });
-
+    
         camera.position.z = 5;
-
-        // Render loop
+    
         function animate() {
             requestAnimationFrame(animate);
             renderer.render(scene, camera);
         }
         animate();
     </script>
-
   </body>
 </html>
