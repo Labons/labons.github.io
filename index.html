@@ -11,9 +11,6 @@
     <title>Document</title>
   </head>
   <body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="https://threejs.org/examples/js/loaders/GLTFLoader.js"></script>
-    <nav class="navblog">
       <a href="https://bluearchive.fandom.com/wiki/Arona">
         <img src="images/file.png" class="imeg">
       </a>
@@ -53,31 +50,6 @@
     </section>
 
     <script src="javascript.js"></script>
-    <div id="modelContainer" style="width: 100vw; height: 100vh;"></div>
-
-    <!-- JavaScript to display your model -->
-    <script type="module">
-        import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.module.js';
-        import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.128.0/examples/jsm/loaders/GLTFLoader.js';
-
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.getElementById('modelContainer').appendChild(renderer.domElement);
-
-        const loader = new GLTFLoader();
-        loader.load('models/Aqua.glb', function (gltf) {
-            scene.add(gltf.scene);
-        });
-
-        camera.position.z = 5;
-
-        function animate() {
-            requestAnimationFrame(animate);
-            renderer.render(scene, camera);
-        }
-        animate();
-    </script>
+  
   </body>
 </html>
