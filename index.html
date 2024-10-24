@@ -15,44 +15,40 @@
     <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 
     <script>
-      // Create the scene, camera, and renderer
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-      const renderer = new THREE.WebGLRenderer({ antialias: true });
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      document.body.appendChild(renderer.domElement);
+// Create the scene
+const scene = new THREE.Scene();
 
-      // Add a directional light
-      const light = new THREE.DirectionalLight(0xffffff, 1);
-      light.position.set(1, 1, 1).normalize();
-      scene.add(light);
+// Set background color to white
+scene.background = new THREE.Color(0xffffff); // White background
 
-      // Load the Aqua.glb model
-      const loader = new THREE.GLTFLoader();
-      loader.load('models/Aqua.glb', function (gltf) {
-        scene.add(gltf.scene); // Add the loaded model to the scene
-      }, undefined, function (error) {
-        console.error('An error occurred:', error);
-      });
+// Set up camera, renderer, and lights (from earlier code)
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+const renderer = new THREE.WebGLRenderer();
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
-      // Set camera position
-      camera.position.set(0, 2, 5); // Adjusted position
+// Load the model
+const loader = new THREE.GLTFLoader();
+loader.load('models/Aqua.glb', function (gltf) {
+    scene.add(gltf.scene);
+});
 
-      // Animation loop to render the scene
-      function animate() {
-        requestAnimationFrame(animate);
-        renderer.render(scene, camera);
-      }
-      animate();
+// Add lights to illuminate the model
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+scene.add(ambientLight);
 
-      // Adjust the canvas when resizing the window
-      window.addEventListener('resize', function () {
-        const width = window.innerWidth;
-        const height = window.innerHeight;
-        renderer.setSize(width, height);
-        camera.aspect = width / height;
-        camera.updateProjectionMatrix();
-      });
+const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+directionalLight.position.set(5, 5, 5);
+scene.add(directionalLight);
+
+camera.position.z = 5;
+
+// Render loop
+function animate() {
+    requestAnimationFrame(animate);
+    renderer.render(scene, camera);
+}
+animate();
     </script>
 
   </body>
