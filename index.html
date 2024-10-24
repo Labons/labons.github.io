@@ -22,6 +22,11 @@
       renderer.setSize(window.innerWidth, window.innerHeight);
       document.body.appendChild(renderer.domElement);
 
+      // Add a directional light
+      const light = new THREE.DirectionalLight(0xffffff, 1);
+      light.position.set(1, 1, 1).normalize();
+      scene.add(light);
+
       // Load the Aqua.glb model
       const loader = new THREE.GLTFLoader();
       loader.load('models/Aqua.glb', function (gltf) {
@@ -31,7 +36,7 @@
       });
 
       // Set camera position
-      camera.position.z = 5;
+      camera.position.set(0, 2, 5); // Adjusted position
 
       // Animation loop to render the scene
       function animate() {
@@ -49,5 +54,6 @@
         camera.updateProjectionMatrix();
       });
     </script>
+
   </body>
 </html>
