@@ -122,7 +122,7 @@ nav #bars{
 .image1{
     top: 1em;
     left: 36em;
-     /*background-image: url(../Images-SAMPLE/BigImage.jpg);*/
+    /* background-image: url(/Images-SAMPLE/BigImage.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -513,24 +513,26 @@ hr{
 @media screen and (max-width: 480px) {
     body{
         background: #1e1e1e;
+        max-width: 480px;
     }
     nav{
         height: 5em;
     }
     nav .nav-links{
-        left: 9em;
+        left: 10em;
     }
     nav .nav-links a{
         left: -90px;
         font-size: 16px;
-        margin: 0 30px 0 0;
+        margin: 0 20px 0 0;
         line-height: 5em;
     }
     .container{
         top: 6em;
         height: 145em;
-        width: 20em;
+        width: 28em;
         margin-bottom: -25em;
+        display: block;
     }
     .menu-overlay{
         position: fixed;
@@ -539,15 +541,15 @@ hr{
     }
     .container .cards > div{
         top: 4em;
-        width: 5em;
+        width: 8em;
         height: 12em;
         margin: 0 5px 20px 5px;
     }
     .overlay{
-        width: 20em;
-        height: 40%;
-        top: 32.5em;
-        left: 12em;
+        width: 28em;
+        height: 100%;
+        top: 25em;
+        left: 15em;
         z-index: 2;
     }
     .overlay img{
@@ -566,10 +568,10 @@ hr{
         top: 80em;
     }
     .c-view{
-        height: 13em;
+        height: 20em;
         top: -80px;
-        left: 100px;
-        width: 10em;
+        left: 90px;
+        width: 20em;
         margin-top: 10em;
         z-index: -1;
     }
@@ -577,15 +579,15 @@ hr{
         position: absolute;
         color: #fff;
         display: flex;
-        top: -60em;
-        left: -10em;
+        top: -55em;
+        left: -8em;
     }
     .overlay .c-descript .c-dex{
         position: absolute;
         height: 60px;
         width: 33em;
-        left: -10em;
-        top: -55em;
+        left: -8em;
+        top: -50em;
         color: #fff;
         display: block;
     }
@@ -611,13 +613,13 @@ hr{
         margin-top: 10px;
         letter-spacing: 1px;
         font-size: 12px;
-        width: 20em;
+        width: 30em;
     }
     .overlay .c-descript .c-price{
         position: absolute;
         display: flex;
-        top: -40em;
-        left: -8em;
+        top: -35em;
+        left: -6.5em;
     }
     .overlay .c-descript .c-price p{
         margin-top: 0;
@@ -650,7 +652,7 @@ hr{
     }
     nav .logo{
         position: absolute;
-        left: 5px;
+        left: 4px;
         top: 10px;
     }
     nav .logo img{
@@ -661,51 +663,44 @@ hr{
     .sub-content{
         position: relative;
         height: 45em;
-        width: 74em;
+        width: 28em;
         top: 34em;
-        margin-top: 2em;
+        right: 0em;
+        text-align: center;
         background: linear-gradient(90deg, #6a6a6a 35%, #2D3436 100%);
     }
     .sub-content .image-feed img{
         height: 22em;
-        width: 20em;
-        left: -14px;
+        width: 25em;
+        left: -18px;
         top: -10px;
         border-radius: 0;
     }
-    /* .sub-content2{
-        position: relative;
-        height: 35em;
-        width: 22em;
-        margin-top: 18em;
-        left: 0;
-        background: linear-gradient(90deg, #6a6a6a 35%, #2D3436 100%);
-    } */
     .sub-content .image-feed p{
-        width: 32em;
-        top: 51em;
-        font-size: 10px;
+        width: 34em;
+        top: 39em;
+        font-size: 12px;
         display: block;
-        left: 25px;
+        left: 20px;
         font-weight: 500;
     }
     .sub-content .image-feed h1{
-        width: 20em;
-        top: 28em;
+        width: 25em;
+        top: 25em;
         letter-spacing: .5px;
-        left: 25px;
-        font-size: 15.5px;
+        left: 18px;
+        font-size: 16px;
         display: block;
         font-weight: 500;
         text-align: justify;
     }
     .sub-content .save{
         bottom: 22em;
-        left: 2.5em;
+        left: 2em;
     }
     .sub-content .direct-link {
         display: block;
-        left: 9em;
+        left: 1em;
         bottom: 10px;
     }
     .sub-content .direct-link a{
@@ -716,35 +711,38 @@ hr{
         padding: 0;
     }
     .content img{
-        margin-top: 15px;
+        left: 45px;
         height: 8em;
+        display: flex;
     }
     .content .tag-line h3{
-        font-size: 19px;
+        font-size: 22px;
     }
     .content .tag-line{
-        top: 6em;
+        left: -10px;
+        top: 4.5em;
     }
     .content .description{
-        top: 6.5em;
+        top: 5em;
+        left: -15px;
         margin-bottom: 30px;
         text-align: justify;
     }
     .content .description p{
-        width: 24em;
-        font-size: 13px;
+        width: 30em;
+        font-size: 15px;
     }
     .content .image1{
         position: absolute;
         height: 20em;
-        width: 20em;
+        width: 28em;
         background-color: #fff;
     }
     .image1{
         position: relative;
         display: block;
-        left: -3.5em;
-        top: 25em;
+        left: -4em;
+        top: 22em;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -760,13 +758,12 @@ hr{
     }
     .menu .menu-overlay{
         position: fixed;
-        right: 25em;
         margin-top: 10px;
+        left:   20em;
         width: 13em;
-        height: 35em;
+        height: 30em;
         z-index: 2;
         border-radius: 0;
-        transition: 0;
     }
     .menu .menu-overlay > p{
         font-size: 15px;
@@ -775,7 +772,8 @@ hr{
     }
     .footer-home{
         position: relative;
-        height: 8em;
+        height: auto;
+        width: auto;
         background-color: #1e1e1e;
         color: #fff;
         top: 12em;
@@ -786,28 +784,27 @@ hr{
     }
     .footer-home .footer-content .footer-logo p{
         padding-bottom: 10px;
-        font-size: 15px;
-    }
-    .footer-home .footer-content .footer-logo .footer-links a{
-        margin-left: 15px;
-        font-size: 10px;
+        font-size: 12px;
     }
     .footer-home .footer-content .footer-links a{
-        margin: 10px;
+        margin: 8px;
         color: #fff;
         text-decoration: none;
+        font-size: 12px;
     }
     .footer-home .footer-content .footer-links a:hover{
         text-decoration: underline;
     }
     .footer-home .footer-content .social-icons img{
-        height: 30px;
+        height: 20px;
         text-decoration: none;
         margin: 10px;
     }
+    .footer-home .footer-bottom{
+        font-size: 12px;
+    }
     nav #bars{
         position: absolute;
-        left: 10px;
-        top: 30px;
+        margin-left: 25em;
     }
 }
