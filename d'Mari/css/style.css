@@ -1,0 +1,813 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, #0B0909 35%, #2D3436 100%);
+}
+nav{
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background-color: #2D3436;
+    opacity: .9;
+    z-index: 2;
+}
+nav .nav-links{
+    position: relative;
+    line-height: 70px;
+    left: 50em;
+}
+nav .nav-links a{
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    margin-right: 5em;
+}
+nav .nav-links .active{
+    border-bottom: 2px solid #fff;
+}
+nav .logo{
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+nav .logo img{
+    position: absolute;
+    height: 5em;
+    cursor: pointer;
+}
+nav .nav-links .search-icon{
+    position: absolute;
+    top: 25px;
+    left: 30em;
+    cursor: pointer;
+}
+nav .nav-links .search-icon img{
+    position: absolute;
+    height: 25px;
+}
+nav .nav-links .search-icon input{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    width: 15em;
+    letter-spacing: .5px;
+    left: 30px;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid #fff;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all .3s;
+    padding-bottom: 5px;
+}
+nav #bars{
+    position: absolute;
+    top: 15px;
+    margin-left: 75em;
+    height: 3em;
+    cursor: pointer;
+}
+
+/*---------HOME CONTENT---------*/
+
+.content{
+    position: relative;
+    top: 8em;
+    left: 5em;
+}
+.content img{
+    position: absolute;
+    height: 180px;
+    top: -30px;
+}
+.content .tag-line{
+    position: relative;
+    top: 8em;
+    left: -3em;
+}
+.content .tag-line h3{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    width: 40em;
+}
+.content .description{
+    position: relative;
+    top: 8em;
+    margin-left: -3em;
+}
+.content .description p{
+    color: #fff;
+    text-align: justify;
+    width: 34em;
+    font-size: 17.5px;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+.content .image1{
+    position: absolute;
+    height: 25em;
+    width: 42em;
+    background-color: #fff;
+}
+.image1{
+    top: 1em;
+    left: 36em;
+     /*background-image: url(../Images-SAMPLE/BigImage.jpg);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change 8888ms linear infinite;
+}
+@keyframes change {
+    1%{
+        background-image: url(/Images-SAMPLE/BigImage.jpg);
+    }30%{
+        background-image: url(/Images-SAMPLE/image2.jpg);
+    }68%{
+        background-image: url(/Images-SAMPLE/imag3.webp);
+    }100%{
+        background-image: url(https://www.yellowbrick.co/wp-content/uploads/2023/02/Streetwear-style.jpg);
+    }
+}
+.content .big-image{
+    position: absolute;
+    height: 100px;
+    width: 800px;
+    top: 32em;
+    padding-top: 20em;
+    background-image: url(/images/big-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-content{
+    position: relative;
+    height: 32em;
+    width: 81em;
+    top: 20em;
+    margin: 0 auto 40px auto;
+    /* border-radius: 6px; */
+    /* background-color: #fff; */
+    background: linear-gradient(90deg, #6a6a6a 35%, #2D3436 100%);
+}
+
+.sub-content .image-feed img{
+    position: relative;
+    width: 25em;
+    height: 27em;
+    margin: 40px 40px;
+    border-radius: 6px;
+}
+
+.sub-content .save{
+    position: absolute;
+    height: 30px;
+    width: 90px;
+    bottom: 50px;
+    left: 50px;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    transition: all .3s;
+}
+.sub-content .save img{
+    height: 25px;
+    margin-top: 2px;
+}
+.sub-content .save a{
+    color: #fff;
+    line-height: 30px;
+    text-decoration: none;
+    outline: none;
+}
+.sub-content .save:hover{
+    background-color: #000000;
+}
+.sub-content .image-feed p{
+    position: absolute;
+    display: inline;
+    top: 9em;
+    font-size: 18px;
+    width: 45em;
+    color: #fff;
+    line-height: 1.5em;
+    letter-spacing: .5px;
+    text-align: justify;
+}
+.sub-content .image-feed h1{
+    position: absolute;
+    display: inline;
+    top: 30px;
+    width: 25em;
+    color: #fff;
+    font-size: 30px;
+}
+.sub-content .direct-link{
+    position: absolute;
+    display: inline;
+    bottom: 60px;
+    left: 30em;
+}
+.sub-content .direct-link a{
+    color: #fff;
+    letter-spacing: 1px;
+}
+/*-------CATEGORIES--------*/
+
+.container{
+    position: relative;
+    height: 128em;
+    width: 70em;
+    background-color: #fff;
+    margin: auto;
+    top: 110px;
+    border-radius: 8px;
+    margin-bottom: -10em;
+}
+.container .view{
+    position: relative;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.menu img{
+    position: relative;
+    width: 3em;
+    top: 20px;
+    left: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .3s;
+    z-index: 1;
+}
+.menu .menu-overlay{
+    position: fixed;
+    height: 30em;
+    width: 13.8em;
+    top:  50px;
+    right: 30px;
+    display: none;
+    transform: translate(-50%);
+    background-color: #fff;
+    border-bottom-right-radius: 4px;
+    text-align: justify;
+    z-index: 2;
+}
+.menu .menu-overlay a{
+    position: relative;
+    display: block;
+    margin-left: 20px;
+    line-height: 40px;
+    font-size: 15.5px;
+    letter-spacing: .1px;
+    cursor: pointer;
+    z-index: 2;
+    text-decoration: none;
+    color: #1e1e1e;
+}
+.menu .menu-overlay #v-all{
+    font-size: 25px;
+    font-weight: 600;
+    cursor: default;
+}
+.container .cards{
+    position: relative;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+}
+.container .cards > div{
+    position: relative;
+    height: 16em;
+    width: 10em;
+    box-shadow: 2px 2px 10px gray;
+    border-radius: 6px;
+    display: inline-block;
+    top: 5em;
+    margin: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .3s;
+}
+.container .cards div > p{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    color: #fff;
+    transform: translateX(-50%);
+}
+.overlay{
+    position: fixed;
+    width: 85em;
+    height: 31.8em;
+    background-color: rgba(0, 0, 0, .9);
+    padding: 20px;
+    top: 55.7%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: none;
+}
+.c-view{
+    position: fixed;
+    height: 33em;
+    width: 25em;
+    left: 10em;
+    top: 10px;
+    z-index: -1;
+}
+.overlay img{
+    position: absolute;
+    height: 55px;
+    top: 2px;
+    right: 50px;
+    cursor: pointer;
+    z-index: 1;
+}
+.overlay .c-descript{
+    position: fixed;
+    height: 25em;
+    width: 37em;
+    margin-left: 40em;
+}
+.overlay .c-descript .c1-logo{
+    position: absolute;
+    height: 80px;
+    width: 10em;
+    top: 3%;
+    left: 50%;
+    background-image: none;
+    transform: translate(-50%, -10%);
+    color: #fff;
+}
+.overlay .c-descript .c-name{
+    position: absolute;
+    height: 60px;
+    width: 33em;
+    color: #fff;
+    top: 22%;
+    display: flex;
+}
+.overlay .c-descript .c-dex{
+    position: absolute;
+    height: 60px;
+    width: 33em;
+    color: #fff;
+    top: 8em;
+    display: block;
+}
+.overlay .c-descript .c-name h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.overlay .c-descript .c-dex h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.overlay .c-descript .c-name p{
+    font-size: 20px;
+    text-align: justify;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+.overlay .c-descript .c-dex p{
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.overlay .c-descript .c-price{
+    position: absolute;
+    height: 24px;
+    width: 15em;
+    color: #fff;
+    font-size: 20px;
+    top: 15em;
+    display: flex;
+    font-weight: 600;
+}
+.overlay .c-descript .c-price p{
+    margin-top: 2.5px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.overlay .c-descript .c-materials{
+    position: absolute;
+    height: 175px;
+    width: 33.5em;
+    color: #fff;
+    top: 22em;
+    display: block;
+}
+.overlay .c-descript .c-materials h3{
+    letter-spacing: 1px;
+}
+.overlay .c-descript .c-materials p{
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+.overlay .direct-link-image{
+    position: absolute;
+    height: 175px;
+    width: 33.5em;
+    color: #fff;
+    top: 30em;
+    display: block;
+}
+.overlay .direct-link-image a{
+    color: #fff;
+}
+.container .btn{
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+.container .btn p{
+    margin-top: 5px;
+    color: gray;
+}
+.container .btn button{
+    position: relative;
+    font-size: 20px;
+    padding: 3px 20px 3px 20px;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px gray;
+    background-color: #1e1e1e;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 6px;
+}
+
+.container .catName{
+    position: relative;
+    display: flex;
+    left: 3em;
+    top: 50px;
+}
+.catName p{
+    font-size: 45px;
+    font-weight: 600;
+}
+.container .catName img{
+    position: relative;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+/*----------FOOTER----------*/
+.footer-home{
+    position: relative;
+    height: auto;
+    margin-top: 25em;
+    background-color: #1e1e1e;
+    color: #fff;
+    text-align: center;
+}
+.footer-home .footer-content .footer-logo img{
+    height: 5em;
+}
+.footer-home .footer-content .footer-logo p{
+    padding-bottom: 10px;
+}
+.footer-home .footer-content .footer-logo .footer-links a{
+    margin-left: 30px;
+}
+.footer-home .footer-content .footer-links a{
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+.footer-home .footer-content .footer-links a:hover{
+    text-decoration: underline;
+}
+.footer-home .footer-content .social-icons img{
+    height: 30px;
+    text-decoration: none;
+    margin: 10px;
+}
+hr{
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 480px) {
+    body{
+        background: #1e1e1e;
+    }
+    nav{
+        height: 5em;
+    }
+    nav .nav-links{
+        left: 9em;
+    }
+    nav .nav-links a{
+        left: -90px;
+        font-size: 16px;
+        margin: 0 30px 0 0;
+        line-height: 5em;
+    }
+    .container{
+        top: 6em;
+        height: 145em;
+        width: 20em;
+        margin-bottom: -25em;
+    }
+    .menu-overlay{
+        position: fixed;
+        left: 20em;
+        z-index: 1;
+    }
+    .container .cards > div{
+        top: 4em;
+        width: 5em;
+        height: 12em;
+        margin: 0 5px 20px 5px;
+    }
+    .overlay{
+        width: 20em;
+        height: 40%;
+        top: 32.5em;
+        left: 12em;
+        z-index: 2;
+    }
+    .overlay img{
+        position: absolute;
+        height: 3em;
+        top: 15px;
+        right: 1em;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .overlay .c-descript{
+        position: fixed;
+        height: 35em;
+        width: 60em;
+        left: -26.5em;
+        top: 80em;
+    }
+    .c-view{
+        height: 13em;
+        top: -80px;
+        left: 100px;
+        width: 10em;
+        margin-top: 10em;
+        z-index: -1;
+    }
+    .overlay .c-descript .c-name{
+        position: absolute;
+        color: #fff;
+        display: flex;
+        top: -60em;
+        left: -10em;
+    }
+    .overlay .c-descript .c-dex{
+        position: absolute;
+        height: 60px;
+        width: 33em;
+        left: -10em;
+        top: -55em;
+        color: #fff;
+        display: block;
+    }
+    .overlay .c-descript .c-name h3{
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #fff;
+        margin-top: 30px;
+    }
+    .overlay .c-descript .c-dex h3{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    .overlay .c-descript .c-name p{
+        font-size: 12px;
+        text-align: justify;
+        letter-spacing: 1px;
+        margin-left: 10px;
+        margin-top: 35px;
+        color: #fff;
+    }
+    .overlay .c-descript .c-dex p{
+        margin-top: 10px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        width: 20em;
+    }
+    .overlay .c-descript .c-price{
+        position: absolute;
+        display: flex;
+        top: -40em;
+        left: -8em;
+    }
+    .overlay .c-descript .c-price p{
+        margin-top: 0;
+        letter-spacing: 1px;
+        font-size: 15px;
+        color: #fff;
+    }
+    .overlay .c-descript .c-price h3{
+        font-size: 18px;
+        letter-spacing: 1px;
+        color: #fff;
+    }
+    .overlay .c-descript .c-materials{
+        position: absolute;
+        height: 175px;
+        width: 33.5em;
+        color: #fff;
+        top: 22em;
+        left: 10em;
+        display: block;
+    }
+    .overlay .c-descript .c-materials h3{
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+    .overlay .c-descript .c-materials p{
+        margin-top: 10px;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    nav .logo{
+        position: absolute;
+        left: 5px;
+        top: 10px;
+    }
+    nav .logo img{
+        position: absolute;
+        height: 4em;
+        cursor: pointer;
+    }
+    .sub-content{
+        position: relative;
+        height: 45em;
+        width: 74em;
+        top: 34em;
+        margin-top: 2em;
+        background: linear-gradient(90deg, #6a6a6a 35%, #2D3436 100%);
+    }
+    .sub-content .image-feed img{
+        height: 22em;
+        width: 20em;
+        left: -14px;
+        top: -10px;
+        border-radius: 0;
+    }
+    /* .sub-content2{
+        position: relative;
+        height: 35em;
+        width: 22em;
+        margin-top: 18em;
+        left: 0;
+        background: linear-gradient(90deg, #6a6a6a 35%, #2D3436 100%);
+    } */
+    .sub-content .image-feed p{
+        width: 32em;
+        top: 51em;
+        font-size: 10px;
+        display: block;
+        left: 25px;
+        font-weight: 500;
+    }
+    .sub-content .image-feed h1{
+        width: 20em;
+        top: 28em;
+        letter-spacing: .5px;
+        left: 25px;
+        font-size: 15.5px;
+        display: block;
+        font-weight: 500;
+        text-align: justify;
+    }
+    .sub-content .save{
+        bottom: 22em;
+        left: 2.5em;
+    }
+    .sub-content .direct-link {
+        display: block;
+        left: 9em;
+        bottom: 10px;
+    }
+    .sub-content .direct-link a{
+        font-size: 10px;
+    }
+    .footer-home{
+        height: 50px;
+        padding: 0;
+    }
+    .content img{
+        margin-top: 15px;
+        height: 8em;
+    }
+    .content .tag-line h3{
+        font-size: 19px;
+    }
+    .content .tag-line{
+        top: 6em;
+    }
+    .content .description{
+        top: 6.5em;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+    .content .description p{
+        width: 24em;
+        font-size: 13px;
+    }
+    .content .image1{
+        position: absolute;
+        height: 20em;
+        width: 20em;
+        background-color: #fff;
+    }
+    .image1{
+        position: relative;
+        display: block;
+        left: -3.5em;
+        top: 25em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .container .catName img{
+        display: none;
+    }
+    .container .catName p{
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        font-size: 18px;
+    }
+    .menu .menu-overlay{
+        position: fixed;
+        right: 25em;
+        margin-top: 10px;
+        width: 13em;
+        height: 35em;
+        z-index: 2;
+        border-radius: 0;
+        transition: 0;
+    }
+    .menu .menu-overlay > p{
+        font-size: 15px;
+        margin: 5px 20px 0;
+        text-align: left;
+    }
+    .footer-home{
+        position: relative;
+        height: 8em;
+        background-color: #1e1e1e;
+        color: #fff;
+        top: 12em;
+        text-align: center;
+    }
+    .footer-home .footer-content .footer-logo img{
+        height: 3em;
+    }
+    .footer-home .footer-content .footer-logo p{
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    .footer-home .footer-content .footer-logo .footer-links a{
+        margin-left: 15px;
+        font-size: 10px;
+    }
+    .footer-home .footer-content .footer-links a{
+        margin: 10px;
+        color: #fff;
+        text-decoration: none;
+    }
+    .footer-home .footer-content .footer-links a:hover{
+        text-decoration: underline;
+    }
+    .footer-home .footer-content .social-icons img{
+        height: 30px;
+        text-decoration: none;
+        margin: 10px;
+    }
+    nav #bars{
+        position: absolute;
+        left: 10px;
+        top: 30px;
+    }
+}

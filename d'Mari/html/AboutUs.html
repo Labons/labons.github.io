@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | d'Mari</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            height: 100vh;
+            width: 100%;
+            overflow-x: hidden;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(90deg, #0B0909 35%, #2D3436 100%);
+            margin: 0;
+        }
+
+        .container {
+            width: 70%;
+            margin-bottom: 100px;
+            background-color: #b8b8b8;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            height: 550px;
+            text-align: justify;
+        }
+
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            font-size: 2.5em;
+            text-align: center;
+        }
+
+        h1 img {
+            margin-left: 20px;
+            max-width: 100px;
+            height: auto;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-logo img {
+            max-width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .footer-links {
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 1.1em;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+        }
+
+        .social-icons img {
+            max-width: 30px;
+            height: auto;
+        }
+
+        .footer-bottom {
+            font-size: 0.9em;
+            color: #ccc;
+        }
+
+      
+        @media screen and (max-width: 780px) {
+            .container {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 2em;
+                flex-direction: column;
+            }
+
+            h1 img {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            footer {
+                padding: 15px;
+            }
+
+            .footer-links a {
+                font-size: 1em;
+            }
+
+            .social-icons a {
+                margin: 0 10px;
+            }
+
+            .social-icons img {
+                max-width: 25px;
+            }
+        }
+
+        .tryImage{
+            position: absolute;
+            left: 8%;
+            top:  4%;
+
+        }
+        .tryImage img{
+            height:20;
+            width: 25em;
+            border-radius: 8px;
+
+        }
+        .container p {
+            margin-top: 3%;
+           margin-left: 40%;
+            text-align: justify;
+            width: 680px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"></a>
+            <a href="index.html"><img src="../images/ad-ons/dmari.png"></a>
+        </div>
+        <div class="nav-links">
+            <a href="../html/index.html">Home</a>
+            <a href="../html/Categories.html">Collections</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>About <img src="../images/ad-ons/dmari.png" alt="d'Mari Logo"></h1>
+        <p>Welcome to d'Mari. Where style meets conversation. Inspired by the vibrant culture of the Philippines, d'Mari
+            takes its name from the word "Mari", short for Marites. A play on the gossiping arts that creep through the
+            cracks of everyday life. Just like a well-told story, every piece in our collection is designed to catch
+            your eyes and stir up some conversation. Our slogan, "The gossip that suits your style", says it all about
+            d'Mari, it is not just making headlines but also conversation. Check out our new collections and become part
+            of the talk of the town.</p>
+            <div class="tryImage">
+                <img src= 'https://getketchadmin.getketch.com/product/8909107504683/660/HLCE000110_1.JPG' >
+        
+        
+            </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../images/ad-ons/dmari.png" alt="d'Mari Logo">
+                <p>d'Mari - "The Gossip that suits your style"</p>
+            </div>
+            <div class="footer-links">
+                <a href="../html/Home.html">Home</a>
+                <a href="../html/Categories.html">Collections</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="../images/ad-ons/fb-icon.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/dMari" target="_blank">
+                    <img src="../images/ad-ons/ig-icon.svg" alt="Instagram">
+                </a>
+                <a href="https://www.twitter.com/dMari" target="_blank">
+                    <img src="../images/ad-ons/x-icon.svg" alt="Twitter">
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 d'Mari. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
