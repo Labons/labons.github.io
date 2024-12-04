@@ -486,6 +486,8 @@ nav #bars{
 }
 .footer-home .footer-content .footer-logo p{
     padding-bottom: 10px;
+    height: auto;
+            margin-left: 39%;
 }
 .footer-home .footer-content .footer-logo .footer-links a{
     margin-left: 30px;
@@ -502,6 +504,20 @@ nav #bars{
     height: 30px;
     text-decoration: none;
     margin: 10px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.footer-logo p {
+    height: auto;
+    margin-left: 39%;
 }
 hr{
     position: relative;
@@ -802,6 +818,7 @@ hr{
     }
     .footer-home .footer-bottom{
         font-size: 12px;
+        
     }
     nav #bars{
         position: absolute;
