@@ -191,3 +191,18 @@ html, body{
         transform: translateY(0); /* Move to original position */
     }
 }
+@media (max-width: 768px) {
+    .container2_text, .container1_1_text {
+        font-size: 1.4rem;
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container2_text, .container1_1_text{
+        font-size: 1.1rem;
+        width: 95%;
+        text-align: center;
+    }
+}
