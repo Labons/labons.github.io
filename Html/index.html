@@ -46,12 +46,12 @@
       margin-top: 0.5em;
       color: #004d40;
     }
-    .projects {
+    .projects, .contact {
       padding: 2em;
       background-color: #b2ebf2;
       display: none;
     }
-    .projects h2 {
+    .projects h2, .contact h2 {
       text-align: center;
       color: #006064;
     }
@@ -70,14 +70,41 @@
     .project-item p {
       color: #004d40;
     }
+    .contact p {
+      text-align: center;
+      color: #004d40;
+      font-size: 1.1em;
+    }
+    .contact a {
+      color: #00796b;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .back-button {
+  display: inline-block;
+  background-color: #00acc1;
+  color: white;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #007c91;
+}
   </style>
 </head>
 <body>
   <nav>
     <a onclick="showSection('home')">Home</a>
     <a onclick="showSection('projects')">Projects</a>
+    <a onclick="showSection('contact')">Contact</a>
   </nav>
-
+<div style="text-align: center; margin-top: 1em;">
+  <a href="../member3.html" class="back-button">← Back to Landing Page</a>
+</div>
   <section class="landing" id="home">
     <img src="Jake.png" alt="Jake Cris Atchazo" />
     <h1>Jake Cris Atchazo</h1>
@@ -92,10 +119,29 @@
     </div>
   </section>
 
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:atchazoj6@gmail.com">atchazoj6@gmail.com</a></p>
+    <p>
+      Facebook: 
+      <a href="https://www.facebook.com/share/1AaiJgbcWj/" target="_blank">
+        Jake Atchazo
+      </a>
+    </p>
+    <div style="display:flex; justify-content:center; margin-top:1em;">
+      <iframe 
+        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AaiJgbcWj%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+        width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+        allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+      </iframe>
+    </div>
+  </section>
+
   <script>
     function showSection(id) {
       document.getElementById('home').style.display = id === 'home' ? 'block' : 'none';
       document.getElementById('projects').style.display = id === 'projects' ? 'block' : 'none';
+      document.getElementById('contact').style.display = id === 'contact' ? 'block' : 'none';
     }
     showSection('home');
   </script>

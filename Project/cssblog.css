@@ -9,12 +9,12 @@
     text-decoration: underline;
 }
 .navblog {
+    
     display: flex;
     justify-content: space-between; /* Space between logo and the nav links */
     align-items: center; /* Vertically aligns the image and list items */
     padding: 10px 20px; /* Padding around the content */
-    background-image: linear-gradient(90deg, rgba(134, 143, 150, 0.7), rgba(89, 97, 100, 0.7));
-    
+    background-image: linear-gradient(90deg, #868F96, #596164);
 }
 .imeg{
     object-fit: cover;
@@ -78,23 +78,7 @@ html, body{
     font-size: 3.5em;
     font-family: 'Roboto',Arial;
     animation: fadeIn 1s ease forwards;
-   color:white
-}
-.header1 h2{
-    font-size: 3.5em;
-    font-family: 'Roboto',Arial;
-    animation: fadeIn 1s ease forwards;
-   color:white
-}
-.arrow {
-    
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 2em;
-    color: white;
-    cursor: pointer;
-    animation: fadeIn 1s ease forwards;
+   
 }
 .Parallax2{
     position:absolute;
