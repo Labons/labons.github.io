@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jake Cris Atchazo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f7fa;
+      color: #004d40;
+    }
+    nav {
+      background-color: #00acc1;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .landing {
+      text-align: center;
+      padding: 3em 1em;
+    }
+    .landing img {
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .landing h1 {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-top: 1em;
+      color: #006064;
+    }
+    .landing p {
+      font-size: 1.2em;
+      margin-top: 0.5em;
+      color: #004d40;
+    }
+    .projects {
+      padding: 2em;
+      background-color: #b2ebf2;
+      display: none;
+    }
+    .projects h2 {
+      text-align: center;
+      color: #006064;
+    }
+    .project-item {
+      background-color: #ffffff;
+      margin: 1em auto;
+      padding: 1em;
+      max-width: 600px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .project-item h3 {
+      margin: 0 0 0.5em;
+      color: #00796b;
+    }
+    .project-item p {
+      color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a onclick="showSection('home')">Home</a>
+    <a onclick="showSection('projects')">Projects</a>
+  </nav>
+
+  <section class="landing" id="home">
+    <img src="Jake.png" alt="Jake Cris Atchazo" />
+    <h1>Jake Cris Atchazo</h1>
+    <p>20, Male, likes to read, a sloth and someone who enjoys good music.</p>
+  </section>
+
+  <section class="projects" id="projects">
+    <h2>Projects</h2>
+    <div class="project-item">
+      <h3>Mental Health Assessment App</h3>
+      <p>An AI-powered app using BERT and traditional models to classify mental health status and offer guidance or professional referral.</p>
+    </div>
+  </section>
+
+  <script>
+    function showSection(id) {
+      document.getElementById('home').style.display = id === 'home' ? 'block' : 'none';
+      document.getElementById('projects').style.display = id === 'projects' ? 'block' : 'none';
+    }
+    showSection('home');
+  </script>
+</body>
+</html>
