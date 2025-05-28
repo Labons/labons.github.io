@@ -9,7 +9,7 @@
  /* Body Styling */
  body {
     height: 100vh;
-    background: url(Smoke.jpg) no-repeat center center / cover;
+    background: url(purplesmoke.jpeg) no-repeat center center / cover;
     padding: 50px 5%;
  }
  
@@ -79,7 +79,7 @@
  }
  
  .home-detail h1 span {
-    color: #4badf4;
+    color: #c34ff1;
  }
  
  .home-detail h2 {
