@@ -75,7 +75,7 @@
 
     .content1 {
         position: fixed;
-        bottom: 25px;
+        bottom: 30px;
         right: 20px;
         z-index: 1;
         cursor: pointer;
