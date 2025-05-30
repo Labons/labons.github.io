@@ -236,7 +236,45 @@
         color: white;
         text-decoration: none;
     }
+    .members-section {
+    background: linear-gradient(180deg, #141E30, #243B55);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 
+}
+
+.members-section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease forwards;
+}
+
+.members-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    animation: fadeIn 1s ease forwards;
+}
+
+.members-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    animation: fadeIn 1s ease forwards;
+}
+
+.members-list li:hover {
+    transform: scale(1.05);
+}
     @media screen and (max-width: 600px) {
         header {
             flex-direction: row;
