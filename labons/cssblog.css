@@ -270,11 +270,49 @@ body {
 
 #animation {
     opacity: 0;
-    /* Initially hidden */
     transform: translateY(20px);
-    /* Move down slightly */
     transition: opacity 1s ease, transform 1s ease;
-    /* Smooth transition */
+}
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 20px;
+  transition: all 0.5s ease;
+}
+
+.profile-description {
+  max-width: 400px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  display: none;
+}
+
+.profile-description button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #09203F;
+  font-weight: bold;
+}
+
+.profile-wrapper.active .profile-description {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.profile-wrapper.active .img {
+  transform: translateX(-50px) scale(0.95);
 }
 
 @keyframes fadeIn {

@@ -4,82 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="cssblog.css">
-
-    <title>Portfolio Compilation</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page</title>
 </head>
+<style>
+    p {
+        color: white;
+
+    }
+</style>
 
 <body>
-    <nav class="navblog">
-        <a href="https://bluearchive.fandom.com/wiki/Onikata_Kayoko"> <img src="images/meme.jpg" class="imeg"></a>
-        <ul>
-            <li><a href="index.html" class="nav-link active">Labons</a></li>
-            <li><a href="member1.html" class="nav-link">James</a></li>
-            <li><a href="member2.html" class="nav-link">Kenneth</a></li>
-            <li><a href="member3.html"class="nav-link">Jake</a></li>
-        </ul>
+    <header>
+        <img class="logo" src="logo.png" alt="logo">
 
-    </nav>
-    <section class="Parallax1">
-        <header class="header1">
-            <img src="images/kayoko.jpg" class="img">
-            <h1>My Projects</h1>
-            <h2>Scroll Down</h2>
-            <span class="arrow">↓</span>
-        </header>
-    </section>
-    <section class="Parallax2">
-        <div class="flex-row">
-            <div class="container1">
-                <iframe src="https://www.youtube.com/embed/-vEAwmbxujo?si=8CUMjvrqQyN9Ws8X" id="animation" class="Vid"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <div class="container1_1">
-                <div id="animation" class="container1_1_text">
-                    <p>I made a video a while back using Adobe Premiere.
-                        Was enjoying VRChat with random people.
-                    </p>
-                </div>
-            </div>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="Jake/index.html">Jake</a></li>
+                <li><a href="labons/labons.html">Levin</a></li>
+                <li><a href="Kenneth/index.html">Kenneth</a></li>
+                <li><a href="James/index.html">James</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <video autoplay loop muted plays-inline class="background-clip">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <h1>A Website Portfolio</h1>
+            <a href="#description">Start Exploring</a>
         </div>
-        <div class="flex-row">
-            <div class="container2">
-                <div id="animation" class="container2_text">
-                    <p>Another video I made that I got interested in making
-                        because my friends were also available :D.
-                    </p>
-                </div>
-            </div>
-            <div class="container2_2">
-                <iframe src="https://www.youtube.com/embed/w5YfRnaI1No?si=LslTyXWQtKryLNWH" id="animation" class="vid2"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+        <!-- The website was developed as a central platform to represent our team's identity, creativity,
+          and capabilities. Its primary purpose is to serve as an online portfolio, showcasing selected works and accomplishments of each team member. From design projects and software development to marketing campaigns and technical research, the site provides visitors with a detailed look at the diverse skills and contributions of our team.
+The development process involved collaborative planning, modern web design principles, and user-friendly navigation
+ to ensure a smooth browsing experience. Each member has a dedicated section where their individual projects, case studies, and achievements are highlighted, allowing for both personal recognition and a clear demonstration of our collective strengths.
+This website not only enhances our digital presence but also acts as a valuable tool for networking, job opportunities, and presenting our work to potential clients or partners.-->
+        <div class="content1">
+            <img src="kayoko.png">
+        </div>
+    </div>
+    <section id="description" class="description-section">
+        <div class="description-card">
+            <h2 class="section-title">About This Website</h2>
+            <p>
+                The website was developed as a central platform to represent our team's identity, creativity, and
+                capabilities.
+                Its primary purpose is to serve as an online portfolio, showcasing selected works and accomplishments of
+                our team members.
+            </p>
+            <p>
+                From design projects and software development to marketing campaigns and technical research, the site
+                provides visitors with a detailed look at the diverse skills and contributions of our team.
+            </p>
+            <p>
+                This website not only enhances our digital presence but also acts as a valuable tool for networking,
+                job opportunities, and presenting our work to potential clients or partners.
+            </p>
         </div>
     </section>
-    <section class="members-section">
-    <h2>The Team</h2>
-    <ul class="members-list"id="animation">
-        <li>Labons</li>
-        <li>James</li>
-        <li>Kenneth</li>
-        <li>Jake</li>
-        <li>Naythan</li>
-        <li>Denver</li>
-        <li>Loraine</li>
-        <li>Shina</li>
-    </ul>
-</section>
-    <script src="javascript.js"></script>
+
+
 </body>
 
 </html>
